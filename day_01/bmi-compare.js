@@ -7,13 +7,13 @@ function bmi(w, h) {
 function compare(bmi) {
     if (bmi < 18.5) {
         console.log("Underweight");
-    } else if (bmi >= 18.5 && bmi <25) {
+    } else if (bmi <25) {
         console.log("Normal weight");
-    } else if (bmi >= 25 && bmi < 30) {
+    } else if (bmi < 30) {
         console.log("Pre-obesity");
-    } else if (bmi >= 30 && bmi < 35) {
+    } else if (bmi < 35) {
         console.log("Obesity clas I");
-    } else if (bmi >= 35 && bmi < 40) {
+    } else if (bmi < 40) {
         console.log("Obesity clas II");
     } else {
         console.log("Obesity clas III");
