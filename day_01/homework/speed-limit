@@ -1,0 +1,13 @@
+function check(speed) {
+    if(speed <= 70) {
+        console.log("Good safe driving");
+    } else if (speed <= 120) {
+        var point =  Math.floor((speed - 70)/5);
+        console.log(`Speed Limit Crossed by ${point} point`);
+    } else {
+        console.log("License Suspended");
+    }
+}
+
+let speed = prompt("Please enter your driving speed");
+check(speed);
