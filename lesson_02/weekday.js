@@ -1,5 +1,5 @@
-let weekday = 3;
-switch (weekday) {
+let day = 3;
+switch (day) {
 	case 0:
 		console.log("Chủ Nhật - Ngày cuối tuần");
 		break;
