@@ -1,4 +1,4 @@
-function list(number) {
+function evenArray(number) {
     const array = [];
     for (let i = 0; i <= number; i++) {
         array.push(i);   
@@ -6,4 +6,4 @@ function list(number) {
     return array;
 }
 
-console.log(list(12));
+console.log(evenArray(12));
