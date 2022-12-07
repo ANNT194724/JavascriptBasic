@@ -1,9 +1,10 @@
 const number = document.getElementById('number');
+let count = 0;
 
 function plus() {
-    ++number.innerHTML;
+    number.innerHTML = ++count;
 }
 
 function minus() {
-    --number.innerHTML;
+    number.innerHTML = --count;
 }
