@@ -8,9 +8,9 @@ btn.addEventListener("click", function () {
 })
 
 // Gọi API để lấy dữ liệu và hiển thị
-function getRandomImage() {
+function getRandomImage(endpoint) {
         // Gọi API lấy ảnh random của dog
-        let res = axios.get("https://dog.ceo/api/breeds/image/random")
+        let res = axios.get(endpoint)
     res.then((response) => {
         image.src = response.data.message;
         })
@@ -45,14 +45,3 @@ btn.addEventListener("click", function () {
     let content = select.options[select.selectedIndex].text;
     getRandomImage(`https://dog.ceo/api/breed/${content}/images/random`)
 })
-
-function getRandomImage(endpoint) {
-    let res = axios.get(endpoint)
-    res
-        .then((response) => {
-            image.src = response.data.message
-        })
-        .catch(() => {
-            image.src = "placeholder.jpg"
-        })
-}
