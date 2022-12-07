@@ -2,11 +2,6 @@ const btn = document.getElementById('btn');
 const image = document.getElementById('image');
 const select = document.getElementById('breed-list');
 
-// Lắng nghe sự kiện khi bấm vào nút "random"
-btn.addEventListener("click", function () {
-    getRandomImage()
-})
-
 // Gọi API để lấy dữ liệu và hiển thị
 function getRandomImage(endpoint) {
         // Gọi API lấy ảnh random của dog
