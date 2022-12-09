@@ -4,8 +4,8 @@ const select = document.getElementById('breed-list');
 
 // Gọi API để lấy dữ liệu và hiển thị
 function getRandomImage(endpoint) {
-        // Gọi API lấy ảnh random của dog
-        let res = axios.get(endpoint)
+    // Gọi API lấy ảnh random của dog
+    let res = axios.get(endpoint)
     res.then((response) => {
         image.src = response.data.message;
         })
